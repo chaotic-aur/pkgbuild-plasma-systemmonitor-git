@@ -3,9 +3,9 @@
 
 pkgname=plasma-systemmonitor
 pkgver=5.23.80_r520.g364bada
-pkgrel=1
+pkgrel=2
 pkgdesc='An interface for monitoring system sensors, process information and other system resources'
-arch=(x86_64)
+arch=($CARCH)
 url='https://kde.org/plasma-desktop/'
 license=(GPL LGPL)
 depends=(ksystemstats-git kitemmodels-git qqc2-desktop-style-git kquickcharts-git)
@@ -21,7 +21,7 @@ pkgver() {
 }
 
 build() {
-  cmake -B build -S ${pkgname%-git} \
+  cmake -B build -S ${pkgname%-git}
   cmake --build build
 }
 

@@ -1,0 +1,18 @@
+pkgbase = plasma-systemmonitor
+	pkgdesc = An interface for monitoring system sensors, process information and other system resources
+	pkgver = 5.23.80_r520.g364bada
+	pkgrel = 2
+	url = https://kde.org/plasma-desktop/
+	arch = x86_64
+	groups = plasma-git
+	license = GPL
+	license = LGPL
+	makedepends = extra-cmake-modules-git
+	depends = ksystemstats-git
+	depends = kitemmodels-git
+	depends = qqc2-desktop-style-git
+	depends = kquickcharts-git
+	source = git+https://invent.kde.org/plasma/plasma-systemmonitor.git
+	sha256sums = SKIP
+
+pkgname = plasma-systemmonitor
